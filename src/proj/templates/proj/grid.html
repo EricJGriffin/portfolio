@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body text-center">
+          {% if proj_1.image %}
+              <img id="image" src="{{ proj_1.image.url }}" class="card-img-top">
+          {% endif %}
+          <h5 class="card-title">{{proj_1.title}}</h5>
+          <div class="collapse" id="content_desc">
+            <p  class="card-text" >{{proj_1.content | linebreaks}}</p>
+          </div>
+          <button class="btn btn-primary" id="image_toggle">Image</button>
+          <button class="btn btn-primary" data-toggle="collapse" data-target="#content_desc" aria-expanded="false" aria-controls="content_desc" >Description</button>
+          <a href="https://github.com/EricJGriffin/blog" class="btn btn-primary">See Code</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body text-center">
+          {% if proj_3.image %}
+              <img id="image3" src="{{ proj_3.image.url }}" class="card-img-top">
+          {% endif %}
+          <h5 class="card-title">{{proj_3.title}}</h5>
+          <div class="collapse" id="content_desc3">
+            <p class="card-text">{{proj_3.content | linebreaks }}</p>
+          </div>
+          <button class="btn btn-primary" id="image_toggle3">Image</button>
+          <button class="btn btn-primary" data-toggle="collapse" data-target="#content_desc3" aria-expanded="false" aria-controls="content_desc3" >Description</button>
+          <a href="https://github.com/EricJGriffin/Tetris_Clone" class="btn btn-primary">See Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body text-center">
+          {% if proj_2.image %}
+              <img src="{{ proj_2.image.url }}" class="card-img-top">
+          {% endif %}
+          <h5 class="card-title">{{proj_2.title}}</h5>
+          <div class="collapse" id="content2">
+            <p class="card-text">{{proj_2.content | linebreaks }}</p>
+          </div>
+          <button class="btn btn-primary" data-toggle="collapse" data-target="#content2" aria-expanded="false" aria-controls="content2" >Description</button>
+          <a href="https://github.com/EricJGriffin/newsletter" class="btn btn-primary">See Code</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body text-center">
+          {% if proj_4.image %}
+              <img id="image4" src="{{ proj_4.image.url }}" class="card-img-top">
+          {% endif %}
+          <h5 class="card-title">{{proj_4.title}}</h5>
+          <div class="collapse" id="content4">
+            <p class="card-text">{{proj_4.content }}</p>
+          </div>
+          <button class="btn btn-primary" id="image_toggle4">Image</button>
+          <button class="btn btn-primary" data-toggle="collapse" data-target="#content4" aria-expanded="false" aria-controls="content4" >Description</button>
+          <a href="https://github.com/EricJGriffin/CeeLo" class="btn btn-primary">See Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body text-center">
+          {% if proj_5.image %}
+              <img id="image5" src="{{ proj_5.image.url }}" class="card-img-top">
+          {% endif %}
+          <h5 class="card-title">{{proj_5.title}}</h5>
+          <div class="collapse" id="content5">
+            <p class="card-text">{{proj_5.content }}</p>
+          </div>
+          <button class="btn btn-primary" id="image_toggle5">Image</button>
+          <button class="btn btn-primary" data-toggle="collapse" data-target="#content5" aria-expanded="false" aria-controls="content5" >Description</button>
+          <a href="https://github.com/EricJGriffin/ATM-app" class="btn btn-primary">See Code</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body text-center">
+          {% if proj_6.image %}
+              <img src="{{ proj_6.image.url }}" class="card-img-top">
+          {% endif %}
+          <h5 class="card-title">{{proj_6.title}}</h5>
+          <div class="collapse" id="content6">
+            <p class="card-text">{{proj_6.content }}</p>
+          </div>
+          <button class="btn btn-primary" data-toggle="collapse" data-target="#content6" aria-expanded="false" aria-controls="content6" >Description</button>
+          <a href="https://github.com/EricJGriffin/MovieQuizApp" class="btn btn-primary">See Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}
